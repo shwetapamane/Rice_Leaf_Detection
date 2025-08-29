@@ -10,7 +10,7 @@ interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
-class_names = ["Bacterial Leaf Blight", "Leaf Smut", "Brown Spot"]
+class_names = ["Bacterial Leaf Blight", "Brown Spot", "Leaf smut"]
 
 st.title("🌱 Rice Leaf Disease Detection")
 uploaded_file = st.file_uploader("Upload a rice leaf image", type=["jpg", "jpeg", "png"])
@@ -35,3 +35,4 @@ if uploaded_file:
     st.write(f"Confidence: {confidence:.2f}%")
 
     
+
